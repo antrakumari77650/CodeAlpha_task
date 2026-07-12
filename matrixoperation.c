@@ -31,7 +31,7 @@ void matrix_multiplication(int a[10][10], int b[10][10], int r1, int c1, int c2)
         printf("\n");
     }
 }
-void matrix_transpose(int a[][10], int r, int c)
+void matrix_transpose(int a[10][10], int r, int c)
 {
     printf("\nTranspose of first matrix:\n");
 
@@ -73,7 +73,7 @@ int main()
     }
 
     if (r1 == r2 && c1 == c2)
-        matrix_addition(a, b, r1, c1);
+        matrix_addition(a, b, c1, r1);
     else
         printf("\nAddition is not possible.\n");
 
